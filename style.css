@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');@import url("https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+:root {
+    --font: 'Sarabun', sans-serif;
+    --xanh: #0000AA;
+    --trang: #FFF;
+    --den: #000;
+    --bg: #C5D6FF;
+    --size5: 5px;
+    --size10: 10px;
+    --size12: 12px;
+    --size14: 14px;
+    --size15: 15px;
+    --size16: 16px;
+    --size18: 18px;
+    --size20: 20px;
+
+}*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+}
+.max-view{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    text-decoration: none;
+    color: var(--den);
+}
+p{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: var(--size12);
+}
+.all-center{
+    display: flex;
+    justify-content: center;
+}
+/* phần xin chào */
+#header{
+    background-color: var(--bg);
+    padding: 30px ;
+    font-weight: 600;
+    position: relative;
+    box-shadow: 0px 1px 5px #07076b;
+    z-index: 99;
+}
+#header span{
+    font-weight: 500;
+    font-size: var(--size14);
+    z-index: 99;
+}
+
+
+/* Phần thân chính */
+.main-social {
+    background-color: var(--bg);
+    padding: var(--size20) var(--size10);
+    z-index: 1;
+}
+/* Phần avarta */
+.main-social .avarta{
+    /* background-color: aqua; */
+    height: 150px;
+}
+.main-social .avarta div{
+    width: 150px;
+    background-color: var(--trang);
+    padding: var(--size5);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px var(--den);
+}
+.main-social .avarta img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+/* Phần name */
+.main-social .name{
+    /* background-color: bisque; */
+    padding: var(--size10);
+}
+.main-social .name span{
+    font-weight: 800;
+    font-size: var(--size20);
+    color: var(--xanh);
+}
+.gioithieu{
+    margin: var(--size10) 0 0;
+}
+/* vị trí */
+.main-social .location {
+    padding: var(--size10);
+    gap: var(--size5);
+}
+/* các liên kết */
+.main-social .social .link{
+    justify-content: center;
+    background-color: #FFF;
+    align-items: center;
+    background-color: var(--trang);
+    color: var(--xanh);
+    font-weight: 500;
+    font-size: var(--size14);
+    width: 100%;
+    padding: var(--size10) 80px var(--size10) var(--size20);
+    border-radius: 50px;
+    box-shadow: 0 3px 5px #07076b;
+    gap: 50px;
+    /* width: 100%; */
+}
+.main-social .social{
+    /* background-color: #b6b6b6; */
+    padding: var(--size15);
+    flex-wrap: wrap;
+    gap: var(--size15);
+}
+.main-social .link div i{
+    color: var(--den);
+    font-size: var(--size20);
+    /* margin-right: auto; */
+}
+.main-social .link .icon{
+    width: 20%;
+}
+.main-social .link .mota{
+    width: 80%;
+}
+.main-social .link .mota p{
+    font-size: var(--size14);
+    font-weight: 600;
+    color: var(--den);
+}
+.main-social .link img{
+   height: 20px;
+}
+
+/* phần kết */
+footer {
+    padding: var(--size20);
+    box-shadow: 0px -1px 5px #07076b;
+    background-color: var(--bg);
+    /* color: var(--xanh); */
+}
+footer div{
+    margin: var(--size20);
+}
+footer div p{
+    font-weight: 600;
+}
