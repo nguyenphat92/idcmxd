@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');@import url("https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 :root {
     --font: 'Sarabun', sans-serif;
-    --xanh: #0000AA;
+    --xanh: #25459d;
     --trang: #FFF;
-    --den: #000;
+    --den: #3b497d;
     --bg: #C5D6FF;
     --size5: 5px;
     --size10: 10px;
@@ -22,9 +22,10 @@ body{
     font-family: var(--font);
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(to top, rgb(145, 172, 235),rgb(183, 224, 249),rgb(241, 255, 247));
 }
 .max-view{
-    max-width: 960px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -44,25 +45,30 @@ p{
 }
 /* phần xin chào */
 #header{
-    background-color: var(--bg);
+    /* background-color: var(--bg); */
     padding: 30px ;
     font-weight: 600;
     position: relative;
     box-shadow: 0px 1px 5px #07076b;
     z-index: 99;
 }
+#header div{
+    padding-left: var(--size20);
+}
 #header span{
     font-weight: 500;
     font-size: var(--size14);
     z-index: 99;
+    color: var(--den);
 }
 
 
 /* Phần thân chính */
 .main-social {
-    background-color: var(--bg);
+    /* background-color: var(--bg); */
     padding: var(--size20) var(--size10);
     z-index: 1;
+    /* background-image: linear-gradient(to top, rgb(145, 172, 235),rgb(183, 224, 249),rgb(254, 241, 255)); */
 }
 /* Phần avarta */
 .main-social .avarta{
@@ -100,10 +106,8 @@ p{
 }
 /* các liên kết */
 .main-social .social .link{
-    justify-content: center;
-    background-color: #FFF;
     align-items: center;
-    background-color: var(--trang);
+    background-image: linear-gradient(to right, rgb(228, 235, 251),rgb(231, 242, 249),rgb(230, 229, 253));
     color: var(--xanh);
     font-weight: 500;
     font-size: var(--size14);
@@ -133,8 +137,8 @@ p{
 }
 .main-social .link .mota p{
     font-size: var(--size14);
-    font-weight: 600;
-    color: var(--den);
+    font-weight: 800;
+    color: var(--den)
 }
 .main-social .link img{
    height: 20px;
@@ -144,7 +148,7 @@ p{
 footer {
     padding: var(--size20);
     box-shadow: 0px -1px 5px #07076b;
-    background-color: var(--bg);
+    /* background-color: var(--bg); */
     /* color: var(--xanh); */
 }
 footer div{
@@ -152,4 +156,5 @@ footer div{
 }
 footer div p{
     font-weight: 600;
+    color: var(--den);
 }
