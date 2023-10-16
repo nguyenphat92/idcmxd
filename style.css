@@ -43,6 +43,10 @@ p{
     display: flex;
     justify-content: center;
 }
+svg{
+    width: 25px; 
+    height: 25px;
+}
 /* phần xin chào */
 #header{
     /* background-color: var(--bg); */
@@ -56,12 +60,12 @@ p{
     padding-left: var(--size20);
 }
 #header span{
-    font-weight: 500;
+    font-weight: 800;
+    font-style: italic;
     font-size: var(--size14);
     z-index: 99;
     color: var(--den);
 }
-
 
 /* Phần thân chính */
 .main-social {
@@ -104,6 +108,10 @@ p{
     padding: var(--size10);
     gap: var(--size5);
 }
+.main-social .location svg{
+    width: 15px;
+    height: 15px;
+}
 /* các liên kết */
 .main-social .social .link{
     align-items: center;
@@ -114,9 +122,8 @@ p{
     width: 100%;
     padding: var(--size10) 80px var(--size10) var(--size20);
     border-radius: 50px;
-    box-shadow: 0 3px 5px #07076b;
+    box-shadow: 0 3px 5px #0a0a52;
     gap: 50px;
-    /* width: 100%; */
 }
 .main-social .social{
     /* background-color: #b6b6b6; */
@@ -129,8 +136,8 @@ p{
     font-size: var(--size20);
     /* margin-right: auto; */
 }
-.main-social .link .icon{
-    width: 20%;
+.main-social .link svg{
+    fill: var(--den);
 }
 .main-social .link .mota{
     width: 80%;
@@ -155,6 +162,6 @@ footer div{
     margin: var(--size20);
 }
 footer div p{
-    font-weight: 600;
+    font-weight: 800;
     color: var(--den);
 }
